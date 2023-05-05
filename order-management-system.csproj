@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F4E8958-B2A5-494B-9C5C-B3AD57390582}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>order_management_system</RootNamespace>
+    <AssemblyName>order-management-system</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialSkin.2.2.3.1\lib\net48\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fdcontactDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fdcontactDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fdfeedbackDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fdfeedbackDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fdloginDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fdloginDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fdloginDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fdloginDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ulog.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="fdcontactDBDataSet.xsc">
+      <DependentUpon>fdcontactDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="fdcontactDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fdcontactDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fdcontactDBDataSet.xss">
+      <DependentUpon>fdcontactDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="fdfeedbackDBDataSet.xsc">
+      <DependentUpon>fdfeedbackDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="fdfeedbackDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fdfeedbackDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fdfeedbackDBDataSet.xss">
+      <DependentUpon>fdfeedbackDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="fdloginDBDataSet.xsc">
+      <DependentUpon>fdloginDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="fdloginDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fdloginDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fdloginDBDataSet.xss">
+      <DependentUpon>fdloginDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="fdloginDBDataSet1.xsc">
+      <DependentUpon>fdloginDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="fdloginDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fdloginDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fdloginDBDataSet1.xss">
+      <DependentUpon>fdloginDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burgerhome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coke.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fries.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darktoggle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lighttoggle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\us-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pas-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\social.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PngItem_2816296.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thank you.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thank you.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feedback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fdcontactDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fdcontactDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>fdcontactDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="fdfeedbackDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fdfeedbackDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>fdfeedbackDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="fdloginDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fdloginDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>fdloginDB.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
