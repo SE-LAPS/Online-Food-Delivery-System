@@ -1,5 +1,5 @@
 # Online-Food-Delivery-System
-Online Food Delivery System Using C# 
+<h2>Online Food Delivery System Using C# </h2>
 
 01) Login/Registration Page UI
 ![1](https://user-images.githubusercontent.com/87580847/236455139-d10e4c1e-a134-4518-96a8-b7a4e34ac6d1.png)
@@ -23,8 +23,8 @@ Online Food Delivery System Using C#
 ![7](https://user-images.githubusercontent.com/87580847/236455671-1dce5462-a5f8-495f-aeee-f3197fe482ed.png)
 
 
-<br>
----- Add The DataBase Tables ----
+<br><br>
+<h2>Add The DataBase Tables</h2>
 
 01) ADMIN / USER DATABASE TABLE
 ![10](https://user-images.githubusercontent.com/87580847/236456486-027a1d25-d78e-4efb-ad39-99fdaad58fa0.png)
@@ -37,6 +37,6 @@ Online Food Delivery System Using C#
 
 
 
-<br>
-Thank You ...
+<br><br>
+<h1>Thank You ...</h1>
 
